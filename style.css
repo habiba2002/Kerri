@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Pattaya;
+}
+
+:root {
+    --main-color: rgb(230, 95, 120);
+}
+
+*::selection {
+    background-color: rgba(230, 95, 120, 0.719);
+}
+
+.txt-align {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+@font-face {
+    font-family: Pattaya;
+    src: url(Fonts/Pattaya/Pattaya-Regular.ttf);
+}
+
+.w-10 {
+    width: 10%;
+}
+
+#home {
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Images/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-link.active {
+    color: var(--main-color) !important;
+}
+
+.navbar-nav li a:hover {
+    color: var(--main-color) !important;
+}
+
+
+.navbar-brand {
+    font-family: Pattaya;
+}
+
+.h-content p {
+    max-width: 500px;
+    line-height: 2rem;
+    color: #cccccce4;
+}
+
+.download-btn {
+    transition: all 0.5s;
+
+}
+
+.download-btn:hover {
+    background-color: #fff !important;
+    color: #222 !important;
+}
+
+.animated-btn {
+    width: 20px;
+    height: 30px;
+    border: solid 2px #fff;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 0px;
+    animation: TB 1.5s infinite ease-in-out;
+}
+
+.animated-btn::after {
+    content: "";
+    width: 5px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    transform: translateX(-50%);
+}
+
+@keyframes TB {
+    0% {
+        top: 85%
+    }
+
+    50% {
+        top: 90%;
+    }
+
+    85% {
+        top: 87%
+    }
+
+    100% {
+        top: 90%;
+    }
+}
+
+.navbar {
+    background-color: #222222db;
+}
+
+/* ===================================================== About ============================================================ */
+
+.a-content span {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.about-icon {
+    border: 2px solid #ccc;
+    border-radius: 50%;
+}
+
+.about-icon:hover {
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+
+/* ===================================================== Services ============================================================ */
+
+.service-title::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s;
+}
+
+.item:hover .service-title::after {
+    width: 70px;
+}
+
+/* ===================================================== Client ============================================================ */
+.hire-btn {
+    background-color: var(--main-color);
+}
+
+/* ===================================================== Services ============================================================ */
+
+.carousel-indicators [data-bs-target] {
+
+    width: 10px;
+    height: 5px;
+    background-color: var(--main-color);
+}
+
+.carousel-indicators .active {
+    width: 20px;
+}
+
+/* ===================================================== Blog ============================================================ */
+#blog span {
+    color: var(--main-color);
+}
+
+/* ===================================================== contact ============================================================ */
+.send-btn {
+    background-color: var(--main-color);
+}
+
+/* ===================================================== portofolio ============================================================ */
+.layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -500px;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 1s;
+}
+
+.p-card:hover .layer {
+    bottom: 0;
+}
+
+
+.port-btn.active {
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+    border: none;
+}
+
+.fa-arrow-up {
+    background-color: var(--main-color);
+}
+
+.fixed-bottom {
+    right: 20px;
+    bottom: 20px;
+}
